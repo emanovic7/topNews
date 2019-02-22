@@ -1,6 +1,6 @@
+import { SELECT_CHANNEL, REQUEST_POSTS, RECEIVE_POSTS } from '../actions';
 
-
-const rootReducer = (state={}, action) => {
+const RootReducer = (state={}, action) => {
   switch(action.type){
     case SELECT_CHANNEL:
       return { ...state, channel: action.channel };
@@ -13,4 +13,4 @@ const rootReducer = (state={}, action) => {
   }
 };
 
-export default rootReducer;
+export default RootReducer;
