@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react'
 import { connect } from 'react-redux'
+import { fetchPosts } from '../actions'
 
 
 
@@ -10,11 +11,10 @@ let Button = ({getPosts, channel}) => (
 )
 
 const mapStateToProps = (state) => ({
-  return {channel: state.channel}
+ channel: state.channel
 })
 
+const mapDispatchToProps = { getPosts: fetchPosts }
 
-const mapDispatchToProps = (dispatch) => {getPosts: fetchPosts}
 
-
-export default (mapStateToProps, mapDispatchToProps)(Button);
+export default connect(mapStateToProps, mapDispatchToProps)(Button);

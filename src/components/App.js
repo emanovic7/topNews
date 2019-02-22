@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-
-import '../App.css';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="topNews">
-        Top News
-      </div>
-    );
-  }
-}
-
+import React from 'react'
+import ChannelsField from '.components/ChannelsField'
+import Button from '../containers/Button'
+import TopNews from '../containers/TopNews'
+const App = () => (
+<div>
+<ChannelsField />
+ <Button />
+ <TopNews />
+</div>
+)
 export default App;
