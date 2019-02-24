@@ -5,7 +5,9 @@ import { fetchPosts } from '../actions'
 
 
 let Button = ({getPosts, channel}) => (
-  <button onClick={() => { getPosts(channel) }}>
+  <button
+    onClick={() => { getPosts(channel) }}
+    className='btn btn-primary btn-lg btn-block' >
     Get Posts
   </button>
 )

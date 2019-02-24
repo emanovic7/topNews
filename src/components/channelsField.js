@@ -1,5 +1,7 @@
 import React from 'react'
 import Channel from '../containers/Channel'
+
+
 const ChannelsField = () => (
    <div className="row" >
      <Channel channelName="BBC" channelString="bbc-news" />
